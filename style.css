@@ -1,0 +1,358 @@
+@font-face {
+    font-family:"Lato";
+    src:url(fonts/lato/Lato-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family:"Lato";
+    src:url(fonts/lato/Lato-Regular.ttf);
+    font-weight: 400;
+}
+
+
+:root {
+    --bg-color:#eee;
+    --default-font-family:"Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    --secondary-color:red;
+    --triatary-color:#f06e6e;
+    --btn-color:black;
+    --btn-hover-color:black;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+section {
+    display: block;
+    margin:64px auto;
+}
+
+
+body {
+    font-family:var(--default-font-family);
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+#header {
+    background-color: var(--bg-color);
+    /**/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    /**/
+    display: flex;
+    align-items: center;
+    /**/
+    font-size:1.3rem;
+    /**/
+    padding:2px;
+}
+
+#header .logo {
+    margin: 8px 8px 8px 48px;
+    /**/
+    flex-shrink:1;
+    width: 180px;
+}
+
+#header .logo #header-img {
+    width: 100%;
+    max-width: 70vw;
+}
+
+#header #nav-bar {
+    text-align:center;
+    /**/
+    margin-left: auto;
+    flex-basis: 50%;
+}
+
+#header #nav-bar ul {
+    list-style: none;
+    margin: inherit;
+    padding: inherit;
+    /**/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#header #nav-bar ul li {
+    min-width: max-content;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 4px;
+    margin: 8px;
+}
+
+/**/
+
+#hero {
+    width: fit-content;
+    text-align:center;
+    margin-top:105px; /*overridden by js when the script loads*/
+}
+
+#hero * {
+    display: block;
+    margin-left:auto; margin-right:auto;
+}
+
+#hero #form > * {
+    margin-top:8px;
+    margin-bottom:16px;
+}
+
+#hero #form input {
+    width:270px;
+    height:30px;
+    padding:6px;
+}
+
+#hero #form input[type="submit"] {
+    border:none;
+    outline:none;
+    /**/
+    width:150px;
+    height:30px;
+    /**/
+    background-color: var(--triatary-color);
+    color:var(--btn-color);
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#hero #form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    color:var(--btn-hover-color);
+    transition:background-color 1s;
+}
+
+/**/
+
+#features {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+#features .feature {
+    display: flex;
+    margin:18px;
+}
+
+#features .feature-icon {
+    margin-right:8%;
+    align-self:center;
+}
+
+#features .feature i {
+    text-align:center;
+    font-size:3rem;
+    color:var(--secondary-color);
+    padding:8px;
+    /**/
+    width: 100px;
+}
+
+#features .feature .feature-content {
+    margin-left: auto;
+    flex-shrink:1;
+    flex-grow:1;
+}
+
+#features .feature .feature-content > * {
+    margin: 0;
+}
+
+/**/
+
+#how-it-works {
+    max-width: 600px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+#how-it-works .videowrapper {
+    position: relative;
+    width: 100%;
+    height:0;
+    padding-bottom:56.25%;
+}
+
+#how-it-works #video {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+/**/
+
+#pricing {
+
+}
+
+#pricing .pricing-container {
+    max-width:1000px;
+    margin-left:auto; margin-right:auto;
+    /**/
+    display:flex
+}
+
+#pricing .pricing-container .item {
+    border:1px solid black;
+    border-radius:4px;
+    /**/
+    min-height: 320px;
+    flex: 1 1 300px;
+    margin:10px;
+    /**/
+    text-align:center;
+}
+
+#pricing .pricing-container .item > * {
+    padding-left:8px;
+    padding-right:8px;
+}
+
+#pricing .pricing-container .item header {
+    background-color:#ddd;
+    /**/
+    padding:4px;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+#pricing .pricing-container .item p.price {
+    font-size:1.5rem;
+    font-weight: bold;
+    /**/
+    margin-bottom:0;
+}
+
+#pricing .pricing-container .item ul.description {
+    list-style: none;
+    /**/
+}
+
+#pricing .pricing-container .item ul.description li {
+    line-height:30px;
+}
+
+#pricing .pricing-container .item button {
+    background-color:var(--triatary-color);
+    color:var(--btn-color);
+    /**/
+    border: none;
+    outline:none;
+    font-size:1rem;
+    text-transform: uppercase;
+    padding:8px;
+    width:7rem;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+#pricing .pricing-container .item button:hover {
+    background-color:var(--secondary-color);
+    color:var(--btn-hover-color);
+    transition:background-color 1s;
+}
+
+/**/
+
+footer {
+
+}
+
+footer .footer-wrapper {
+    background-color: #ddd;
+    /**/
+    max-width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:4px;
+}
+
+footer .footer-wrapper ul {
+    list-style: none;
+    padding: inherit;
+    margin: 15px 20px 0 auto;
+    width: max-content;
+}
+
+footer .footer-wrapper ul li {
+    display: inline;
+    margin-left: 16px;
+}
+
+footer .footer-wrapper p.copyright {
+    margin: 0 20px 20px auto;
+    text-align: right;
+    font-size:0.9rem;
+    color:#444;
+}
+
+/**/
+
+@media screen and (max-width:720px) {
+    #pricing .pricing-container {
+        flex-direction:column;
+    }
+
+    #pricing .pricing-container .item {
+        flex: 1 1 auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #header, #header #nav-bar ul {
+        flex-direction: column;
+    }
+
+    #header .logo, #header #nav-bar {
+        margin: unset;
+    }
+
+    #header {
+        font-size: 1rem;
+    }
+
+    #header #nav-bar ul li {
+        padding: 0;
+        margin:unset;
+        margin-bottom:4px;
+    }
+
+    /**/
+
+    #hero {
+        margin-top:163px; /*overridden by js when the script loads*/
+    }
+
+    /**/
+
+    #features .feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #features .feature-icon {
+        margin-right: unset;
+    }
+}

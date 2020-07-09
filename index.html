@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- icons -->
+    <link href="fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="logo.png" alt="logo">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#how-it-works">How It Works</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Handcrafted, home-made masterpieces</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <input id="email" type="email" placeholder="Enter your email address" name="email" required/>
+            <input id="submit" type="submit" value="Get Started" />
+        </form>
+    </section>
+
+    <section id="features">
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fas fa-gem"></i>
+            </div>
+            <div class="feature-content">
+                <h2>Premium Materials</h2>
+                <p>Our guitars use the best materials that is sourced locally. This will increase the longevity of your purchase.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fas fa-truck"></i>
+            </div>
+            <div class="feature-content">
+                <h2>Fast Shipping</h2>
+                <p>We make sure you recieve your guitar as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="feature-content">
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <div class="videowrapper">
+            <iframe id="video" width="600" height="338" src="https://www.youtube.com/embed/1saDVRMoN28?rel=0&controls=0&showinfo=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope"></iframe>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="pricing-container">
+            <div class="item">
+                <header>
+                    <h3>Classical Guitar</h3>
+                </header>
+                <p class="price">$199</p>
+                    <ul class="description">
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                <button>Select</button>
+            </div>
+            <div class="item">
+                <header>
+                    <h3>Steel String Guitar</h3>
+                </header>
+                <p class="price">$399</p>
+                    <ul class="description">
+                        <li>The easiest to learn.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                <button>Select</button>
+            </div>
+            <div class="item">
+                <header>
+                    <h3>Electric Guitar</h3>
+                </header>
+                <p class="price">$599</p>
+                    <ul class="description">
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                <button>Select</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p class="copyright">Copyright 2020, Original Guitars</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
